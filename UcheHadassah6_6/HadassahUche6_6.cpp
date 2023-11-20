@@ -17,11 +17,12 @@ int main()
 	cin >> str2;
 	for (size1 = 0; str1[size1] != '\0'; size1++);
 	for (size2 = 0; str2[size2] != '\0'; size2++);
-	if(size1 == size2)
+	int maxsize = size1;
+	if(size1 != size2)
 	{
-		for (int i = 0; i < size1; i++)
+		if (size2 > size1)
 		{
-			cout << str1[i] << str2[i];
+			maxsize = size2;
 		}
 	}
 	else if (size1 != size2)
