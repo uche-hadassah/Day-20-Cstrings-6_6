@@ -25,22 +25,15 @@ int main()
 			maxsize = size2;
 		}
 	}
-	else if (size1 != size2)
+	for (int i = 0; i < maxsize; i++)
 	{
-		if (size1 > size2)
+		if (i < size1)
 		{
-			size2 = size1;
+			cout << str1[i];
 		}
-		for (int j = 0; j < size2; j++)
+		if (i < size2)
 		{
-			if(str1[j] == '\0' && str2[j] != '\0')
-			{
-				cout << str2[j];
-			}
-			else
-			{
-				cout << str1[j] << str2[j];
-			}
+			cout << str2[i];
 		}
 	}
 }
